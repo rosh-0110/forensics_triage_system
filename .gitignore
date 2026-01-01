@@ -1,0 +1,20 @@
+# Security - Private keys should not be in public repo
+private_key.pem
+
+# Evidence storage - Can be large and contains real data
+server/evidence_storage/*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows specific
+desktop.ini
