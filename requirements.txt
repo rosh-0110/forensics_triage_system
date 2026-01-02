@@ -1,0 +1,12 @@
+# Client/requirements
+requests
+cryptography
+psutil
+pywin32
+
+# Server/requirements
+Flask
+Flask-Login
+mysql-connector-python==8.2.0
+cryptography
+PyOpenSSL
