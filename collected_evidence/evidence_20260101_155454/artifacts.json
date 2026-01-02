@@ -1,0 +1,1021 @@
+{
+  "system_info": {
+    "computer_name": "DESKTOP-KF9S7M9",
+    "platform": "Windows",
+    "platform_version": "10.0.10240",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "username": "victim",
+    "collection_time": "2026-01-01T15:54:53.781104"
+  },
+  "processes": [
+    {
+      "name": "System Idle Process",
+      "memory_percent": 0.00019077670921623205,
+      "pid": 0,
+      "username": "NT AUTHORITY\\SYSTEM",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "System",
+      "memory_percent": 0.15033204686239085,
+      "pid": 4,
+      "username": "NT AUTHORITY\\SYSTEM",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "chrome.exe",
+      "memory_percent": 1.942870006658107,
+      "pid": 176,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "smss.exe",
+      "memory_percent": 0.04445097324738207,
+      "pid": 240,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "csrss.exe",
+      "memory_percent": 0.13850389089098447,
+      "pid": 324,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.6944272215470847,
+      "pid": 328,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "wininit.exe",
+      "memory_percent": 0.18047476691855552,
+      "pid": 384,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "csrss.exe",
+      "memory_percent": 0.207183506208828,
+      "pid": 392,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "winlogon.exe",
+      "memory_percent": 0.29742088966810576,
+      "pid": 440,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "services.exe",
+      "memory_percent": 0.2520160328746425,
+      "pid": 464,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "lsass.exe",
+      "memory_percent": 0.47694177304058016,
+      "pid": 472,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.67744809442684,
+      "pid": 560,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.35026603812100204,
+      "pid": 592,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "dwm.exe",
+      "memory_percent": 2.096445257577174,
+      "pid": 696,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.5349378926423146,
+      "pid": 716,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 1.219253948600939,
+      "pid": 768,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.7480354768368458,
+      "pid": 808,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 2.096254480867958,
+      "pid": 828,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.379836428049518,
+      "pid": 856,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.831214122055123,
+      "pid": 888,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "SearchProtocolHost.exe",
+      "memory_percent": 0.5034597356216364,
+      "pid": 964,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "spoolsv.exe",
+      "memory_percent": 0.501551968529474,
+      "pid": 1084,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.753949554822549,
+      "pid": 1124,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "ShellExperienceHost.exe",
+      "memory_percent": 1.8240161168163946,
+      "pid": 1168,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.789243246027552,
+      "pid": 1372,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "sppsvc.exe",
+      "memory_percent": 0.5786257590528318,
+      "pid": 1452,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "chrome.exe",
+      "memory_percent": 13.770072094518412,
+      "pid": 1692,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "python.exe",
+      "memory_percent": 1.549869985672669,
+      "pid": 1716,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.6246029459739437,
+      "pid": 1740,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "svchost.exe",
+      "memory_percent": 0.2369446728465602,
+      "pid": 1928,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "dasHost.exe",
+      "memory_percent": 0.34873982444727214,
+      "pid": 2008,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "SppExtComObj.Exe",
+      "memory_percent": 0.3632388543477058,
+      "pid": 2068,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "conhost.exe",
+      "memory_percent": 0.6135378968394023,
+      "pid": 2352,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "sihost.exe",
+      "memory_percent": 0.7701655751059288,
+      "pid": 2504,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "taskhostw.exe",
+      "memory_percent": 0.5704223605565338,
+      "pid": 2532,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "explorer.exe",
+      "memory_percent": 3.6732147592493316,
+      "pid": 2700,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "RuntimeBroker.exe",
+      "memory_percent": 0.9573175268470523,
+      "pid": 2812,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "SearchIndexer.exe",
+      "memory_percent": 0.8584951914730443,
+      "pid": 2852,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "conhost.exe",
+      "memory_percent": 0.6093408092366451,
+      "pid": 3248,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "chrome.exe",
+      "memory_percent": 0.9088602427061295,
+      "pid": 3308,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "SearchUI.exe",
+      "memory_percent": 4.28598954925187,
+      "pid": 3360,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "WmiPrvSE.exe",
+      "memory_percent": 0.4385956544881175,
+      "pid": 3460,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "SearchFilterHost.exe",
+      "memory_percent": 0.33958254240489305,
+      "pid": 3480,
+      "username": null,
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "chrome.exe",
+      "memory_percent": 1.6841767889608963,
+      "pid": 3560,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "chrome.exe",
+      "memory_percent": 7.541212538608437,
+      "pid": 3772,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "cmd.exe",
+      "memory_percent": 0.14499029900433635,
+      "pid": 3892,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "cmd.exe",
+      "memory_percent": 0.11065049134541458,
+      "pid": 3932,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    },
+    {
+      "name": "chrome.exe",
+      "memory_percent": 0.29150681168240256,
+      "pid": 3940,
+      "username": "DESKTOP-KF9S7M9\\victim",
+      "cpu_percent": 0.0
+    }
+  ],
+  "network_connections": [
+    {
+      "local_address": "127.0.0.1:1900",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:445",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 4
+    },
+    {
+      "local_address": "0.0.0.0:5357",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 4
+    },
+    {
+      "local_address": ":::135",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 592
+    },
+    {
+      "local_address": ":::5353",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 3772
+    },
+    {
+      "local_address": "127.0.0.1:50343",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "fd00::344b:b137:b2f2:f40c:49511",
+      "remote_address": "2a03:2880:f317:120:face:b00c:0:167:5222",
+      "status": "FIN_WAIT2",
+      "pid": 176
+    },
+    {
+      "local_address": "10.0.2.15:138",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 4
+    },
+    {
+      "local_address": "10.0.2.15:139",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 4
+    },
+    {
+      "local_address": "0.0.0.0:4500",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 768
+    },
+    {
+      "local_address": "fe80::d1a6:815a:6c5d:4401:50339",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": ":::5355",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 328
+    },
+    {
+      "local_address": ":::50345",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 888
+    },
+    {
+      "local_address": ":::3702",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:50344",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 888
+    },
+    {
+      "local_address": "fd00::344b:b137:b2f2:f40c:49499",
+      "remote_address": "2404:6800:4003:c05::bc:5228",
+      "status": "ESTABLISHED",
+      "pid": 176
+    },
+    {
+      "local_address": "0.0.0.0:51451",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:135",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 592
+    },
+    {
+      "local_address": ":::4500",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 768
+    },
+    {
+      "local_address": ":::51452",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": ":::49409",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 808
+    },
+    {
+      "local_address": "0.0.0.0:52698",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 2008
+    },
+    {
+      "local_address": "10.0.2.15:50341",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:49412",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 464
+    },
+    {
+      "local_address": "0.0.0.0:3702",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": ":::49424",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 1928
+    },
+    {
+      "local_address": "0.0.0.0:49438",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 472
+    },
+    {
+      "local_address": "192.168.56.10:139",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 4
+    },
+    {
+      "local_address": "192.168.56.10:50342",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "fd00::344b:b137:b2f2:f40c:49510",
+      "remote_address": "2a03:2880:f354:120:face:b00c:0:167:443",
+      "status": "ESTABLISHED",
+      "pid": 176
+    },
+    {
+      "local_address": "10.0.2.15:49488",
+      "remote_address": "23.202.229.22:443",
+      "status": "ESTABLISHED",
+      "pid": 3360
+    },
+    {
+      "local_address": "0.0.0.0:500",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 768
+    },
+    {
+      "local_address": ":::52699",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 2008
+    },
+    {
+      "local_address": "10.0.2.15:1900",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:5353",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 328
+    },
+    {
+      "local_address": ":::3702",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 2008
+    },
+    {
+      "local_address": "0.0.0.0:49410",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 768
+    },
+    {
+      "local_address": "fe80::5b4:26a0:7ec5:ff2:50338",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "::1:50340",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": ":::49438",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 472
+    },
+    {
+      "local_address": ":::3702",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 888
+    },
+    {
+      "local_address": "192.168.56.10:137",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 4
+    },
+    {
+      "local_address": "0.0.0.0:49424",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 1928
+    },
+    {
+      "local_address": ":::500",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 768
+    },
+    {
+      "local_address": "0.0.0.0:5353",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 3772
+    },
+    {
+      "local_address": ":::49411",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 1084
+    },
+    {
+      "local_address": "0.0.0.0:3702",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 2008
+    },
+    {
+      "local_address": "fe80::d1a6:815a:6c5d:4401:1900",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:49411",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 1084
+    },
+    {
+      "local_address": ":::49408",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 384
+    },
+    {
+      "local_address": "fe80::5b4:26a0:7ec5:ff2:1900",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:5355",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 328
+    },
+    {
+      "local_address": "192.168.56.10:1900",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "0.0.0.0:3702",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 888
+    },
+    {
+      "local_address": ":::5357",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 4
+    },
+    {
+      "local_address": "0.0.0.0:49408",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 384
+    },
+    {
+      "local_address": ":::49412",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 464
+    },
+    {
+      "local_address": "::1:1900",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 856
+    },
+    {
+      "local_address": "192.168.56.10:138",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 4
+    },
+    {
+      "local_address": ":::5353",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 328
+    },
+    {
+      "local_address": "10.0.2.15:137",
+      "remote_address": null,
+      "status": "NONE",
+      "pid": 4
+    },
+    {
+      "local_address": ":::445",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 4
+    },
+    {
+      "local_address": "0.0.0.0:49409",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 808
+    },
+    {
+      "local_address": ":::49410",
+      "remote_address": null,
+      "status": "LISTEN",
+      "pid": 768
+    }
+  ],
+  "registry_run_keys": [
+    {
+      "hive": "HKCU",
+      "path": "Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Microsoft Edge Update",
+      "value": "\"C:\\Users\\victim\\AppData\\Local\\Microsoft\\EdgeUpdate\\1.3.215.9\\MicrosoftEdgeUpdateCore.exe\""
+    }
+  ],
+  "startup_items": [
+    {
+      "path": "C:\\Users\\victim\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
+      "item": "desktop.ini"
+    },
+    {
+      "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
+      "item": "desktop.ini"
+    }
+  ],
+  "scheduled_tasks": [
+    {
+      "task_name": "\\MicrosoftEdgeUpdateTaskUserS-1-5-21-126344342-2989983522-403690350-1001Core{AE70A5D1-F238-47F7-85B9-D0A88716067E}",
+      "status": "01-Jan-26 4:57:52 PM",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\MicrosoftEdgeUpdateTaskUserS-1-5-21-126344342-2989983522-403690350-1001UA{B558C4B1-3440-4F2F-BB72-1C48F75DC947}",
+      "status": "01-Jan-26 4:27:52 PM",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319 64",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319 64 Critical",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319 Critical",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\AD RMS Rights Policy Template Management (Automated)",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\AD RMS Rights Policy Template Management (Automated)",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\AD RMS Rights Policy Template Management (Manual)",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\AppID\\PolicyConverter",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\AppID\\SmartScreenSpecific",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\AppID\\VerifiedPublisherCertStoreCheck",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser",
+      "status": "02-Jan-26 4:40:21 AM",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser",
+      "status": "02-Jan-26 3:53:23 AM",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Application Experience\\ProgramDataUpdater",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Application Experience\\StartupAppTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\ApplicationData\\CleanupTemporaryState",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\ApplicationData\\DsSvcCleanup",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\AppxDeploymentClient\\Pre-staged app cleanup",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Autochk\\Proxy",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Bluetooth\\UninstallDeviceTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask-Roam",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask-Roam",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Chkdsk\\ProactiveScan",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\CloudExperienceHost\\CreateObjectTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+      "status": "01-Jan-26 6:00:00 PM",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\KernelCeipTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Uploader",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Scan",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Scan",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Scan for Crash Recovery",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Defrag\\ScheduledDefrag",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Diagnosis\\Scheduled",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\DiskCleanup\\SilentCleanup",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticDataCollector",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticResolver",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\DiskFootprint\\Diagnostics",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClient",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\File Classification Infrastructure\\Property Definition Sync",
+      "status": "N/A",
+      "next_run_time": "Disabled"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\FileHistory\\File History (maintenance mode)",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\Installation",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\Installation",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Location\\Notifications",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Location\\WindowsActionDialog",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Maintenance\\WinSAT",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    },
+    {
+      "task_name": "\\Microsoft\\Windows\\Maps\\MapsToastTask",
+      "status": "N/A",
+      "next_run_time": "Ready"
+    }
+  ],
+  "browser_history_indicators": [
+    {
+      "browser": "Default",
+      "history_file": "C:\\Users\\victim\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History",
+      "modified": "2026-01-01T15:45:29.891121"
+    }
+  ],
+  "chain_of_custody_legal": {
+    "case_id": "CASE-20260101_155342",
+    "investigator_name": "Test Investigator",
+    "investigator_id": "T-001",
+    "department": "Test DEPT",
+    "location": "TEST location",
+    "case_description": "File test",
+    "collection_time": "2026-01-01T15:54:54.451868",
+    "collector_version": "TAC-v1.0"
+  }
+}
