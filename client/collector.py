@@ -13,19 +13,13 @@ from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.backends import default_backend
 
-# Disable SSL warnings for self-signed certificate
 warnings.filterwarnings('ignore')
 
-
-
-# dynamic case id
 from datetime import datetime
 
-# Generate unique case ID based on timestamp
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 CASE_ID = f"CASE-{timestamp}"
 
-# Enhanced Chain-of-Custody Legal Requirements - Interactive Input
 print("\n" + "="*60)
 print("  CHAIN-OF-CUSTODY LEGAL REQUIREMENTS")
 print("="*60)
@@ -38,10 +32,8 @@ COLLECTOR_VERSION = "TAC-v1.0"
 print("="*60 + "\n")
 
 
-# Configuration
 SERVER_URL = "https://192.168.56.20:5000/api/upload"
 
-# Paths
 BASE_PATH = r"C:\forensics_project"
 KEYS_PATH = os.path.join(BASE_PATH, "keys")
 EVIDENCE_PATH = os.path.join(BASE_PATH, "collected_evidence")
@@ -158,7 +150,7 @@ def get_scheduled_tasks():
                             "status": parts[1].strip('"'),
                             "next_run_time": parts[2].strip('"')
                         })
-            return tasks[:50]  # Limit to first 50 tasks
+            return tasks[:50]  
     except:
         pass
     return []
@@ -168,7 +160,7 @@ def get_browser_history():
     print("[*] Collecting browser history indicators...")
     history_indicators = []
     
-    # Common browser history file locations
+    
     browser_paths = [
         os.path.expanduser(r"~\AppData\Local\Google\Chrome\User Data\Default\History"),
         os.path.expanduser(r"~\AppData\Roaming\Mozilla\Firefox\Profiles"),
@@ -184,7 +176,7 @@ def get_browser_history():
                     "modified": datetime.fromtimestamp(os.path.getmtime(path)).isoformat()
                 })
             elif os.path.isdir(path):
-                # Firefox has profiles directory
+               
                 for root, dirs, files in os.walk(path):
                     if 'places.sqlite' in files:
                         history_file = os.path.join(root, 'places.sqlite')
@@ -209,9 +201,9 @@ def collect_all_artifacts():
     "network_connections": get_network_connections(),
     "registry_run_keys": get_registry_run_keys(),
     "startup_items": get_startup_items(),
-    "scheduled_tasks": get_scheduled_tasks(),          # NEW
-    "browser_history_indicators": get_browser_history(),  # NEW
-    # Enhanced Chain-of-Custody Legal Fields
+    "scheduled_tasks": get_scheduled_tasks(),          
+    "browser_history_indicators": get_browser_history(),  
+   
     "chain_of_custody_legal": {
         "case_id": CASE_ID,
         "investigator_name": INVESTIGATOR_NAME,
@@ -259,11 +251,10 @@ def save_evidence_locally(artifacts, evidence_hash, signature):
     evidence_folder = os.path.join(EVIDENCE_PATH, f"evidence_{timestamp}")
     os.makedirs(evidence_folder, exist_ok=True)
     
-    # Save artifacts
+    
     with open(os.path.join(evidence_folder, "artifacts.json"), 'w') as f:
         json.dump(artifacts, f, indent=2)
     
-    # Save chain of custody log
     coc_log = {
         "case_id": CASE_ID,
         "source_computer": socket.gethostname(),
@@ -277,8 +268,6 @@ def save_evidence_locally(artifacts, evidence_hash, signature):
         json.dump(coc_log, f, indent=2)
     
     print(f"[+] Evidence saved to: {evidence_folder}")
-
-
 
 
 def send_to_server(artifacts, evidence_hash, signature):
@@ -323,24 +312,19 @@ def send_to_server(artifacts, evidence_hash, signature):
         return None
 
 def main():
-    # Collect artifacts
+    
     artifacts = collect_all_artifacts()
     
-    # Calculate hash
     print("[*] Calculating evidence hash...")
     evidence_hash = calculate_hash(artifacts)
     print(f"[+] Evidence Hash: {evidence_hash}")
     
-    # Sign the hash
     signature = sign_hash(evidence_hash)
     print("[+] Evidence signed successfully")
     
-    # Save locally
     save_evidence_locally(artifacts, evidence_hash, signature)
 
     
-
-    # Send to server
     send_to_server(artifacts, evidence_hash, signature)
     
     print("[+] Collection complete!")
