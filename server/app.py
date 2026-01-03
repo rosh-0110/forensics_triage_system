@@ -14,7 +14,7 @@ from functools import wraps
 app = Flask(__name__)
 app.secret_key = 'forensics_secret_key_2024'
 
-# Database configuration
+
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'forensics_user',
@@ -22,10 +22,10 @@ DB_CONFIG = {
     'database': 'forensics_db'
 }
 
-# Evidence storage path
+
 EVIDENCE_PATH = os.path.join(os.path.dirname(__file__), 'evidence_storage')
 
-# Load public key for signature verification
+
 def load_public_key():
     key_path = os.path.join(os.path.dirname(__file__), 'keys', 'public_key.pem')
     with open(key_path, 'rb') as f:
@@ -33,16 +33,16 @@ def load_public_key():
 
 PUBLIC_KEY = load_public_key()
 
-# Database connection
+
 def get_db_connection():
     return mysql.connector.connect(**DB_CONFIG)
 
-# Initialize database tables
+
 def init_database():
     conn = get_db_connection()
     cursor = conn.cursor()
     
-    # Users table
+    
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -52,8 +52,7 @@ def init_database():
         )
     ''')
     
-    # Chain of custody ledger table
-    # Chain of custody ledger table
+  
     cursor.execute('''
        CREATE TABLE IF NOT EXISTS chain_of_custody (
            id INT AUTO_INCREMENT PRIMARY KEY,
@@ -73,7 +72,7 @@ def init_database():
        )
    ''')
     
-    # Create default admin user (password: admin123)
+   
     admin_password = hashlib.sha256('admin123'.encode()).hexdigest()
     try:
         cursor.execute('''
@@ -86,13 +85,13 @@ def init_database():
     cursor.close()
     conn.close()
 
-# User class for Flask-Login
+
 class User(UserMixin):
     def __init__(self, id, username):
         self.id = id
         self.username = username
 
-# Login manager setup
+
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
@@ -109,7 +108,7 @@ def load_user(user_id):
         return User(user['id'], user['username'])
     return None
 
-# Verify digital signature
+
 def verify_signature(data, signature):
     try:
         PUBLIC_KEY.verify(
@@ -123,11 +122,11 @@ def verify_signature(data, signature):
         print(f"Signature verification failed: {e}")
         return False
 
-# Calculate hash of data
+
 def calculate_hash(data):
     return hashlib.sha256(data.encode()).hexdigest()
 
-# Get previous log hash for chain
+
 def get_previous_log_hash():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
@@ -139,7 +138,7 @@ def get_previous_log_hash():
         return result['current_log_hash']
     return '0' * 64
 
-# Routes
+
 @app.route('/')
 def index():
     if current_user.is_authenticated:
@@ -194,7 +193,7 @@ def view_evidence(record_id):
     conn.close()
     
     if record:
-        # Parse the full_artifacts JSON
+       
         try:
             full_artifacts = json.loads(record['full_artifacts'])
         except:
@@ -203,13 +202,13 @@ def view_evidence(record_id):
         return render_template('evidence_detail.html', record=record, full_artifacts=full_artifacts)
     return redirect(url_for('dashboard'))
 
-# API endpoint to receive evidence
+
 @app.route('/api/upload', methods=['POST'])
 def upload_evidence():
     try:
         data = request.json
         
-        # Extract data from request
+        
         case_id = data.get('case_id')
         source_computer = data.get('source_computer')
         source_ip = request.remote_addr
@@ -218,25 +217,25 @@ def upload_evidence():
         evidence_hash = data.get('evidence_hash')
         signature = data.get('signature')
         
-        # Verify signature
+       
         signature_status = 'VERIFIED' if verify_signature(evidence_hash, signature) else 'FAILED'
         
-        # Recalculate hash from artifacts
+       
         artifacts_json = json.dumps(artifacts, sort_keys=True)
         recalculated_hash = calculate_hash(artifacts_json)
         hash_status = 'MATCH' if recalculated_hash == evidence_hash else 'MISMATCH'
         
-        # Determine overall status
+        
         overall_status = 'ACCEPTED' if signature_status == 'VERIFIED' and hash_status == 'MATCH' else 'REJECTED'
         
-        # Get previous log hash for chain
+        
         previous_log_hash = get_previous_log_hash()
         
-        # Calculate current log hash
+        
         log_data = f"{case_id}{source_computer}{evidence_hash}{previous_log_hash}"
         current_log_hash = calculate_hash(log_data)
         
-        # Save to database
+        
         conn = get_db_connection()
         cursor = conn.cursor()
         cursor.execute('''
@@ -254,7 +253,7 @@ def upload_evidence():
         cursor.close()
         conn.close()
         
-        # Save evidence files if accepted
+       
         if overall_status == 'ACCEPTED':
             evidence_dir = os.path.join(EVIDENCE_PATH, f"case_{case_id}_{record_id}")
             os.makedirs(evidence_dir, exist_ok=True)
@@ -287,7 +286,7 @@ def upload_evidence():
             'message': str(e)
         }), 500
 
-# API endpoint to check server status
+
 @app.route('/api/status')
 def api_status():
     return jsonify({
